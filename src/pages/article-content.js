@@ -1,32 +1,42 @@
 const articles = [
     {
-      name: "learn-react",
-      title: "The Fastest Way to Learn React",
+      name: "React",
+      title: "What is React",
       thumbnail: "/images/port1.jpeg",
       content: [
-        `Welcome! Today we're going to be talking about the fastest way to learn React. Lorem proin congue ligula id risus posuere, vel eleifend ex egestas. Sed in turpis leo. Aliquam malesuada in massa tincidunt egestas. Nam consectetur varius turpis, non porta arcu porttitor non. In tincidunt vulputate nulla quis egestas. Ut eleifend ut ipsum non fringilla. Praesent imperdiet nulla nec est luctus, at sodales purus euismod.`,
-        `Donec vel mauris lectus. Etiam nec lectus urna. Sed sodales ultrices dapibus. Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
-        `Etiam nec lectus urna. Sed sodales ultrices dapibus. Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
+        `React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library
+         for building user interfaces or UI components. It is maintained by Facebook and a community of individual 
+         developers and companies. React can be used as a base in the development of single-page or mobile applications. 
+         However, React is only concerned with state management and rendering that state to the DOM, so creating React applications
+          usually requires the use of additional libraries for routing, as well as certain client-side functionality.Wikipedia source`
       ],
     },
     {
-      name: "learn-node",
-      title: "How to Build a Node Server in 10 Minutes",
+      name: "JavaScript",
+      title: "JavaScript Structure",
       thumbnail: "/images/port6.jpeg",
       content: [
-        `In this article, we're going to be talking looking at a very quick way to set up a Node.js server. We'll be discussing some topics such as proin congue ligula id risus posuere, vel eleifend ex egestas. Sed in turpis leo. Aliquam malesuada in massa tincidunt egestas. Nam consectetur varius turpis, non porta arcu porttitor non. In tincidunt vulputate nulla quis egestas. Ut eleifend ut ipsum non fringilla. Praesent imperdiet nulla nec est luctus, at sodales purus euismod.`,
-        `Donec vel mauris lectus. Etiam nec lectus urna. Sed sodales ultrices dapibus. Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
-        `Etiam nec lectus urna. Sed sodales ultrices dapibus. Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
+       `JavaScrip often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.
+       JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based 
+       object-orientation, and first-class functions. Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.
+       Over 97% of websites use it client-side for web page behavior, often incorporating third-party libraries.
+        All major web browsers have a dedicated JavaScript engine to execute the code on the user's device. Wikipedia source.
+       
+       `
       ],
     },
     {
-      name: "my-thoughts-on-learning-react",
-      title: "My Thoughts on Learning ReactJS",
+      name: "Express",
+      title: "Express.js the back end Web application",
       thumbnail: "/images/port7.jpeg",
       content: [
-        `Today is the day I talk about something which scares most people: Learning ReactJS. In reality, I'm not sure why people have such a hard time with Learning ReactJS ligula id risus posuere, vel eleifend ex egestas. Sed in turpis leo. Aliquam malesuada in massa tincidunt egestas. Nam consectetur varius turpis, non porta arcu porttitor non. In tincidunt vulputate nulla quis egestas. Ut eleifend ut ipsum non fringilla. Praesent imperdiet nulla nec est luctus, at sodales purus euismod.`,
-        `Donec vel mauris lectus. Etiam nec lectus urna. Sed sodales ultrices dapibus. Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
-        `Etiam nec lectus urna. Sed sodales ultrices dapibus. Nam blandit tristique risus, eget accumsan nisl interdum eu. Aenean ac accumsan nisi. Nunc vel pulvinar diam. Nam eleifend egestas viverra. Donec finibus lectus sed lorem ultricies, eget ornare leo luctus. Morbi vehicula, nulla eu tempor interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
+       `Express.js, or simply Express, is a back end web application framework for Node.js, released as free and 
+       open-source software under the MIT License. It is designed for building web applications and APIs. It has been 
+       called the de facto standard server framework for Node.js.
+       The original author, TJ Holowaychuk, described it as a Sinatra-inspired server,
+        meaning that it is relatively minimal with many features available as plugins. 
+        Express is the back-end component of popular development stacks like the MEAN, MERN or MEVN stack, together with the MongoDB database software and a 
+        JavaScript front-end framework or library. wikipedia source`
       ],
     },
   ];
