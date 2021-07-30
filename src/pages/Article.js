@@ -3,6 +3,7 @@ import articleContent from './article-content'
 import Articles from '../components/Articles'
 import Notfound from './Notfound'
 import CommentsList from '../components/CommentsList'
+import AddCommetForm from '../components/AddCommentForm'
 
 const Article = ({match}) => {
     const name = match.params.name;
@@ -41,6 +42,9 @@ const Article = ({match}) => {
         </p>
       ))}
       <CommentsList comments={articleInfo.comments} />
+      <AddCommetForm articleName={name} setAritcleInfo={setArticleInfo} />
+      
+      
       <h1 className="sm:text-2x text-xl font-bold mt-4 mb-4 text-gray-900">Related Articles</h1>
       <div className="flex flex wrap -m-4">
         <Articles articles={otherArticles} />
