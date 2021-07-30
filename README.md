@@ -33,3 +33,12 @@ path => style/index.css
   npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
   ```
 4. npx tailwindcss-cli@latest init
+
+
+5. FOR INTERNET EXPLORER
+```
+npm install whatwg-fetch --save
+PATH src/index.js
+import 'whatwg-fetch';
+```
+

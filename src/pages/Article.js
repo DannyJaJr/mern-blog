@@ -4,6 +4,9 @@ import Articles from '../components/Articles'
 import Notfound from './Notfound'
 
 const Article = ({match}) => {
+
+  // to connect the back end
+  
     const name = match.params.name;
     const article = articleContent.find((article) => article.name === name);
     if (!article) return <Notfound />
