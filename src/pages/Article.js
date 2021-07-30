@@ -1,14 +1,31 @@
-import React from 'react'
+import React , {useState, useEffect} from 'react'
 import articleContent from './article-content'
 import Articles from '../components/Articles'
 import Notfound from './Notfound'
+import CommentsList from '../components/CommentsList'
 
 const Article = ({match}) => {
-
-  // to connect the back end
-  
     const name = match.params.name;
     const article = articleContent.find((article) => article.name === name);
+    
+
+  //   to connect the backend with fecth add this on json: 
+  //   "name": "full-stack-blog",
+  // "version": "0.1.0",
+  // "private": true,
+  // "proxy": "https://localhost:8000/", then 
+  const [articleInfo, setArticleInfo] = useState({ comments: [] });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await fetch(`/api/articles/${name}`);
+      const body = await result.json();
+      console.log(body);
+      setArticleInfo(body);
+    };
+    fetchData();
+  }, [name]);
+
     if (!article) return <Notfound />
 
     const otherArticles = articleContent.filter(article => article.name !== name )
@@ -23,6 +40,7 @@ const Article = ({match}) => {
           {paragraph}
         </p>
       ))}
+      <CommentsList comments={articleInfo.comments} />
       <h1 className="sm:text-2x text-xl font-bold mt-4 mb-4 text-gray-900">Related Articles</h1>
       <div className="flex flex wrap -m-4">
         <Articles articles={otherArticles} />
